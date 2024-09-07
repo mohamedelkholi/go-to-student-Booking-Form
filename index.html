@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  </head>
+    <title>04Academy</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <section class="main d-flex container container-border">
+      <section class="Booking">
+        <h3>Registration & Booking at GoStudent</h3>
+        <h6>The leading platform for online tutoring</h6>
+
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="loginPhone"
+                >LOGIN PHONE NUMBER <span>(preferably the student`s)</span>
+              </label>
+              <input
+                type="text"
+                id="loginPhone"
+                name="loginPhone"
+                class="form-input"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contactPhone"
+                >CONTACT PHONE NUMBER
+                <span>(preferably the student`s)</span></label
+              >
+              <input
+                type="text"
+                id="loginPhone"
+                name="loginPhone"
+                class="form-input"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"
+                >CONTACT EMAIL ADDRESS
+                <span>(preferably the student`s)</span></label
+              >
+              <input type="text" id="email" name="email" class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="name">CONTACT NAME </label>
+              <input type="text" id="name" name="name" class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="address">BILLING ADDRESS</label>
+              <div class="d-flex-start">
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  class="form-input form-input-address"
+                  placeholder="Address"
+                />
+                <input
+                  type="text"
+                  id="NR"
+                  name="Nr"
+                  class="form-input form-input-Nr"
+                  placeholder="Nr"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-flex-start">
+                <input
+                  type="text"
+                  id="postal-code"
+                  name="postal-code"
+                  class="form-input form-input-postal-code"
+                  placeholder="postal-code"
+                />
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  class="form-input form-input-city"
+                  placeholder="city"
+                />
+                <select id="country" name="country" class="form-country-select">
+                  <option value="select" disabled selected>country</option>
+                  <option value="usa">Egypt</option>
+                  <option value="uk">UAE</option>
+                  <option value="canada">Saudi Arabia</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sessions">MONTHLY SESSIONS</label>
+              <select
+                id="sessions"
+                name="sessions"
+                class="form-sessions-select"
+              >
+                <option value="select" disabled selected>8 Sessions</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="payment-method">
+          <label for="payment">SELECT PAYMENT METHOD</label>
+          <div class="payment-options">
+            <div class="radio-group">
+              <div class="flex-left">
+                <input
+                  type="radio"
+                  id="sepa"
+                  name="payment-method"
+                  value="sepa"
+                />
+                <label for="sepa">SEPA</label>
+              </div>
+            </div>
+            <div class="radio-group">
+              <div class="flex-left">
+                <input
+                  type="radio"
+                  id="visa"
+                  name="payment-method"
+                  value="visa"
+                />
+                <label for="visa">Visa</label>
+              </div>
+              <div class="card-inputs">
+                <input
+                  type="text"
+                  id="card-holder"
+                  name="card-holder"
+                  class="form-input card-holder"
+                  placeholder="Card holder"
+                />
+                <div class="card-number-container">
+                  <input
+                    type="text"
+                    id="card-num"
+                    name="card-num"
+                    class="form-input card-num"
+                    placeholder="Card Number"
+                  />
+                  <div class="card-info">MM/DD CVC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>100 % secure payment. All data is encrypted.</p>
+        </div>
+      </section>
+      <section class="order-overview">
+        <div class="d-flex">
+
+          <h5>Order Overview</h5>
+
+          <div class="custom-select-container ">
+            <select id="flag-selector">
+              <option value="egypt" data-flag="./assets/egypt.jpg" class="hidden-option">Egypt</option>
+              <option value="saudi" data-flag="./assets/saudi.jpg" class="hidden-option">Saudi Arabia</option>
+              <option value="uae" data-flag="./assets/uae.jpg" class="hidden-option">UAE</option>
+            </select>
+         
+          </div>
+        </div>
+
+        <div class="radio-container">
+          <div class="radio-group-right">
+            <input
+              type="radio"
+              id="six-months"
+              name="subscription"
+              value="6-months"
+            />
+            <label for="six-months">6 months</label>
+          </div>
+          <div class="radio-group-right">
+            <input
+              type="radio"
+              id="nine-months"
+              name="subscription"
+              value="9-months"
+            />
+            <label for="nine-months">9 months</label>
+          </div>
+          <div class="radio-group-right">
+            <input
+              type="radio"
+              id="twelve-months"
+              name="subscription"
+              value="12-months"
+            />
+            <label for="twelve-months">12 months</label>
+          </div>
+          <div class="radio-group-right">
+            <input
+              type="radio"
+              id="twenty-four-months"
+              name="subscription"
+              value="24-months"
+            />
+            <label for="twenty-four-months">24 months</label>
+          </div>
+          <div class="radio-group-right">
+            <input
+              type="radio"
+              id="thirty-six-months"
+              name="subscription"
+              value="36-months"
+            />
+            <label for="thirty-six-months">36 months</label>
+          </div>
+          <div class="radio-group-right">
+            <input
+              type="radio"
+              id="forty-eight-months"
+              name="subscription"
+              value="48-months"
+            />
+            <label for="forty-eight-months">48 months</label>
+          </div>
+        </div>
+
+        
+        <div class="custom-radio">
+          <input type="checkbox" id="pay-in-advance" />
+          <label for="pay-in-advance">Pay in advance - EXTRA 5% DISCOUNT</label>
+        </div>
+
+
+        <div class="pricing-table">
+          <div class="pricing-item">
+            <span class="price-label">Number of sessions P.M.</span>
+            <span class="price sessions">8</span>
+          </div>
+          <div class="pricing-item">
+            <span class="price-label">Regular Price</span>
+            <span class="price regular-price">29.60€</span>
+          </div>
+          <div class="pricing-item">
+            <span class="price-label">Your Price</span>
+            <span class="price your-price">28.40€</span>
+          </div>
+          <div class="pricing-item">
+            <span class="dis" >Discount</span>
+            <span class="price discount ">-9.60€</span>
+          </div>
+          <hr>
+          <div class="pricing-item">
+            <span class="price-label">Setup Fee</span>
+            <span class="price blue setup-fee">0.00€</span>
+          </div>
+          <div class="pricing-total">
+            <span class="price-label">TOTAL P.M.</span>
+            <span class="price blue total-pm">227.20€</span>
+          </div>
+        </div>
+
+        <div class="custom-radio terms">
+          <input type="checkbox" id="pay-in-advance" />
+          <label for="pay-in-advance"> I accept the <span class="blue"> Terms & Conditions 
+
+          </span > and understand my <span class="blue"> right of withdrawal</span> as well as the circumstances that lead to a repeal of the same </label>
+        </div>
+        <button class="button_one">Order now</button>
+        
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
